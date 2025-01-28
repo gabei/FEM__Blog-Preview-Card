@@ -13,9 +13,9 @@ I wanted to make good use of Sass's nesting styles functionality in this project
 - <a href="https://www.npmjs.com/package/node-sass" target="_blank">Node-sass</a>
 - <a href="https://www.npmjs.com/package/live-server" target="_blank">live-server</a>
 
-### Author
-Frontend Mentor - <a href="https://www.frontendmentor.io/profile/gabei">@gabei</a>
-GitHub - <a href="https://github.com/gabei">@gabei</a>
+## Author
+<p>Frontend Mentor - <a href="https://www.frontendmentor.io/profile/gabei">@gabei</a></p>
+<p>GitHub - <a href="https://github.com/gabei">@gabei</a></p>
 
 
 
