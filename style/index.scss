@@ -1,49 +1,6 @@
 @import './reset.scss';
-
-// colors
-$color-yellow: #F4D04E;
-$color-gray-950: #111111;
-$color-gray-500: #6B6B6B;
-$color-white: #FFFFFF;
-
-
-// fonts
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit&display=swap');
-
-
-body {
-    font-family: "Figtree", serif;
-    letter-spacing: 0rem;
-    line-height: 150%;
-}
-
-@mixin figtree-extra-bold {
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
-@mixin figtree-extra-bold--small {
-    font-size: 0.875rem;
-    font-weight: 800;
-} 
-
-@mixin figtree-medium {
-    font-size: 1rem;
-    font-weight: 500;
-} 
-
-@mixin figtree-medium--small {
-    font-size: 0.865rem;
-    font-weight: 500;
-} 
-
-// spacing
-$spacing-300: 1.5rem;
-$spacing-150: 0.75rem;
-$spacing-100: 0.5rem;
-
-// animations
-$transition-default: 0.75s all;
+@import './typography.scss';
+@import './util.scss';
 
 body {
     background-color: $color-yellow;

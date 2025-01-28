@@ -1,0 +1,29 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit&display=swap');
+
+
+body {
+    font-family: "Figtree", serif;
+    letter-spacing: 0rem;
+    line-height: 150%;
+}
+
+@mixin figtree-extra-bold {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+@mixin figtree-extra-bold--small {
+    font-size: 0.875rem;
+    font-weight: 800;
+} 
+
+@mixin figtree-medium {
+    font-size: 1rem;
+    font-weight: 500;
+} 
+
+@mixin figtree-medium--small {
+    font-size: 0.865rem;
+    font-weight: 500;
+} 
