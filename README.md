@@ -2,7 +2,7 @@
 Your challenge is to build out this blog preview card and get it looking as close to the design as possible.
 
 <p align="center">
-![Image](./assets/images/design/mobile-design.jpg)
+![A reference image of the page design.](reference-image.jpg)
 </p>
 
 ## My Approach
