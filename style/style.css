@@ -32,28 +32,47 @@ body {
   gap: 1rem;
   background-color: #FFFFFF;
   color: #111111;
-  box-shadow: #111111; }
+  box-shadow: 0.5rem 0.5rem 0rem #111111;
+  border: 1px solid #111111;
+  transition: 0.75s all;
+  cursor: pointer; }
+  .card:hover {
+    box-shadow: 1rem 1rem 0rem #111111; }
+    .card:hover .card__text--header {
+      color: #F4D04E; }
   .card__image {
-    height: 200px; }
-  .card__tag {
+    height: 200px;
+    border-radius: 10px; }
+  .card__tag p {
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 800;
     color: #111111;
     background-color: #F4D04E;
     border-radius: 4px;
-    padding: 0.25rem; }
+    padding: 0.25rem;
+    display: inline; }
   .card__date {
     font-size: 0.865rem;
     font-weight: 500; }
   .card__text--header {
     font-size: 1.5rem;
-    font-weight: 800; }
+    font-weight: 800;
+    transition: 0.75s all; }
   .card__text--paragraph {
     font-size: 1rem;
     font-weight: 500;
     color: #6B6B6B; }
-  .card__author--avatar {
-    border-radius: 50%; }
-  .card__author--name {
-    font-size: 0.875rem;
-    font-weight: 500; }
+  .card__author {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; }
+    .card__author--avatar {
+      width: 2rem;
+      border-radius: 50%; }
+    .card__author--name {
+      font-size: 0.875rem;
+      font-weight: 800;
+      font-style: normal; }
+
+.attribution {
+  padding: 2rem; }

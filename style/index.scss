@@ -24,7 +24,7 @@ body {
 
 @mixin figtree-extra-bold--small {
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 800;
 } 
 
 @mixin figtree-medium {
@@ -37,13 +37,13 @@ body {
     font-weight: 500;
 } 
 
-
-
-
 // spacing
 $spacing-300: 1.5rem;
 $spacing-150: 0.75rem;
 $spacing-100: 0.5rem;
+
+// animations
+$transition-default: 0.75s all;
 
 body {
     background-color: $color-yellow;
@@ -64,18 +64,34 @@ body {
     gap: 1rem;
     background-color: $color-white;
     color: $color-gray-950;
-    box-shadow: $color-gray-950;
+    box-shadow: 0.5rem 0.5rem 0rem $color-gray-950;
+    border: 1px solid$color-gray-950;
+    transition: $transition-default;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 1rem 1rem 0rem $color-gray-950;
+
+        & .card__text--header {
+            color: $color-yellow;
+        }
+    }
+
    
     &__image {
         height: 200px;
+        border-radius: 10px;
     }
 
     &__tag {
-        @include figtree-extra-bold--small;
-        color: $color-gray-950;
-        background-color: $color-yellow;
-        border-radius: 4px;
-        padding: 0.25rem;
+        p {
+            @include figtree-extra-bold--small;
+            color: $color-gray-950;
+            background-color: $color-yellow;
+            border-radius: 4px;
+            padding: 0.25rem;
+            display: inline;
+        }
     }
 
     &__date {
@@ -85,6 +101,7 @@ body {
     &__text {
         &--header {
             @include figtree-extra-bold;
+            transition: $transition-default;
         }
         &--paragraph {
             @include figtree-medium;
@@ -93,12 +110,22 @@ body {
     }
 
     &__author { 
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
         &--avatar {
+            width: 2rem;
             border-radius: 50%;
         }
 
         &--name {
-            @include figtree-extra-bold--small
+            @include figtree-extra-bold--small;
+            font-style: normal;
         }
     }
+}
+
+.attribution {
+    padding: 2rem;
 }
