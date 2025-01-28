@@ -36,10 +36,6 @@ body {
   border: 1px solid #111111;
   transition: 0.75s all;
   cursor: pointer; }
-  .card:hover {
-    box-shadow: 1rem 1rem 0rem #111111; }
-    .card:hover .card__text--header {
-      color: #F4D04E; }
   .card__image {
     height: 200px;
     border-radius: 10px; }
@@ -50,7 +46,8 @@ body {
     background-color: #F4D04E;
     border-radius: 4px;
     padding: 0.25rem;
-    display: inline; }
+    display: inline;
+    padding: 0.3rem 0.75rem; }
   .card__date {
     font-size: 0.865rem;
     font-weight: 500; }
@@ -73,6 +70,10 @@ body {
       font-size: 0.875rem;
       font-weight: 800;
       font-style: normal; }
+  .card:hover {
+    box-shadow: 1rem 1rem 0rem #111111; }
+    .card:hover .card__text--header {
+      color: #F4D04E; }
 
 .attribution {
   padding: 2rem; }
