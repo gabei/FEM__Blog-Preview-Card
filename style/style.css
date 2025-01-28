@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit&display=swap");
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Figtree", serif;
+  letter-spacing: 0rem;
+  line-height: 150%; }
+
+body {
+  background-color: #F4D04E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.card {
+  width: 24rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #FFFFFF;
+  color: #111111;
+  box-shadow: #111111; }
+  .card__image {
+    height: 200px; }
+  .card__tag {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #111111;
+    background-color: #F4D04E;
+    border-radius: 4px;
+    padding: 0.25rem; }
+  .card__date {
+    font-size: 0.865rem;
+    font-weight: 500; }
+  .card__text--header {
+    font-size: 1.5rem;
+    font-weight: 800; }
+  .card__text--paragraph {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6B6B6B; }
+  .card__author--avatar {
+    border-radius: 50%; }
+  .card__author--name {
+    font-size: 0.875rem;
+    font-weight: 500; }

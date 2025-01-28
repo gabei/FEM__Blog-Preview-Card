@@ -1,0 +1,104 @@
+@import './reset.scss';
+
+// colors
+$color-yellow: #F4D04E;
+$color-gray-950: #111111;
+$color-gray-500: #6B6B6B;
+$color-white: #FFFFFF;
+
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit&display=swap');
+
+
+body {
+    font-family: "Figtree", serif;
+    letter-spacing: 0rem;
+    line-height: 150%;
+}
+
+@mixin figtree-extra-bold {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+@mixin figtree-extra-bold--small {
+    font-size: 0.875rem;
+    font-weight: 500;
+} 
+
+@mixin figtree-medium {
+    font-size: 1rem;
+    font-weight: 500;
+} 
+
+@mixin figtree-medium--small {
+    font-size: 0.865rem;
+    font-weight: 500;
+} 
+
+
+
+
+// spacing
+$spacing-300: 1.5rem;
+$spacing-150: 0.75rem;
+$spacing-100: 0.5rem;
+
+body {
+    background-color: $color-yellow;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 24rem;
+    padding: $spacing-300;
+    border-radius: 20px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background-color: $color-white;
+    color: $color-gray-950;
+    box-shadow: $color-gray-950;
+   
+    &__image {
+        height: 200px;
+    }
+
+    &__tag {
+        @include figtree-extra-bold--small;
+        color: $color-gray-950;
+        background-color: $color-yellow;
+        border-radius: 4px;
+        padding: 0.25rem;
+    }
+
+    &__date {
+        @include figtree-medium--small;
+    }
+
+    &__text {
+        &--header {
+            @include figtree-extra-bold;
+        }
+        &--paragraph {
+            @include figtree-medium;
+            color: $color-gray-500;
+        }
+    }
+
+    &__author { 
+        &--avatar {
+            border-radius: 50%;
+        }
+
+        &--name {
+            @include figtree-extra-bold--small
+        }
+    }
+}

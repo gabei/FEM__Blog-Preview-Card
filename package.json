@@ -1,0 +1,24 @@
+{
+  "name": "fem__blog-preview-card",
+  "description": "![Design preview for the Blog preview card coding challenge](./preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchsass": "node-sass -w style/index.scss style/style.css",
+    "compsass": "node-sass style/index.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabei/FEM__Blog-Preview-Card.git"
+  },
+  "author": "Gabe Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabei/FEM__Blog-Preview-Card/issues"
+  },
+  "homepage": "https://github.com/gabei/FEM__Blog-Preview-Card#readme"
+}
