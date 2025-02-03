@@ -1,11 +1,5 @@
-// 425px breakpoint
-    // card width = 20rem
-    // attribution padding 1rem
-//
-
+// add as needed
 $small-phone: 450px;
-$tablet: 700px;
-$desktop: 1024px;
 
 @mixin breakpoint-small-phone {
     @media screen and (max-width: $small-phone) {
