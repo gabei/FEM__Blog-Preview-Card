@@ -22,7 +22,7 @@ body {
     gap: 1rem;
     background-color: util.$color-white;
     color: util.$color-gray-950;
-    box-shadow: 0.5rem 0.5rem 0rem $color-gray-950;
+    box-shadow: 0.5rem 0.5rem 0rem util.$color-gray-950;
     border: 1px solid util.$color-gray-950;
     transition: util.$transition-default;
     cursor: pointer;
@@ -34,7 +34,7 @@ body {
 
     &__tag {
         p {
-            @include figtree-extra-bold--small;
+            @include type.figtree-extra-bold--small;
             color: util.$color-gray-950;
             background-color: util.$color-yellow;
             border-radius: 4px;
@@ -54,7 +54,7 @@ body {
             transition: util.$transition-default;
         }
         &--paragraph {
-            @include figtree-medium;
+            @include type.figtree-medium;
             color: util.$color-gray-500;
         }
     }
@@ -76,7 +76,7 @@ body {
     }
 
     &:hover {
-        box-shadow: 1rem 1rem 0rem $color-gray-950;
+        box-shadow: 1rem 1rem 0rem util.$color-gray-950;
 
         & .card__text--header {
             color: util.$color-yellow;
