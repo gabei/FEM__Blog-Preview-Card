@@ -28,6 +28,14 @@ body {
     cursor: pointer;
     position: relative;
 
+    &:hover {
+        box-shadow: 1rem 1rem 0rem util.$color-gray-950;
+
+        & .card__text--header {
+            color: util.$color-yellow;
+        }
+    }
+
     &__image {
         height: 200px;
         border-radius: 10px;
@@ -77,7 +85,7 @@ body {
     }
 
         & .card__text--header {
-            color: util.$color-yellow;
+            color: util.$color-gray-950;
             text-decoration: inherit;
 
             // expand this link to cover the card
@@ -90,9 +98,7 @@ body {
             }  
         }
 
-        &:hover {
-            box-shadow: 1rem 1rem 0rem util.$color-gray-950;
-        }
+        
     
 
     // handle devices here
