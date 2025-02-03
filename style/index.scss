@@ -1,29 +1,30 @@
-@import './reset.scss';
-@import './typography.scss';
-@import './util.scss';
+@use './reset.scss';
+@use './typography.scss' as type;
+@use './util.scss' as util;
+@use './responsive.scss' as responsive;
 
 body {
-    background-color: $color-yellow;
+    background-color: util.$color-yellow;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .card {
     width: 24rem;
-    padding: $spacing-300;
+    padding: util.$spacing-300;
     border-radius: 20px;;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    background-color: $color-white;
-    color: $color-gray-950;
+    background-color: util.$color-white;
+    color: util.$color-gray-950;
     box-shadow: 0.5rem 0.5rem 0rem $color-gray-950;
-    border: 1px solid$color-gray-950;
-    transition: $transition-default;
+    border: 1px solid util.$color-gray-950;
+    transition: util.$transition-default;
     cursor: pointer;
 
     &__image {
@@ -34,8 +35,8 @@ body {
     &__tag {
         p {
             @include figtree-extra-bold--small;
-            color: $color-gray-950;
-            background-color: $color-yellow;
+            color: util.$color-gray-950;
+            background-color: util.$color-yellow;
             border-radius: 4px;
             padding: 0.25rem;
             display: inline;
@@ -44,17 +45,17 @@ body {
     }
 
     &__date {
-        @include figtree-medium--small;
+        @include type.figtree-medium--small;
     }
 
     &__text {
         &--header {
-            @include figtree-extra-bold;
-            transition: $transition-default;
+            @include type.figtree-extra-bold;
+            transition: util.$transition-default;
         }
         &--paragraph {
             @include figtree-medium;
-            color: $color-gray-500;
+            color: util.$color-gray-500;
         }
     }
 
@@ -69,7 +70,7 @@ body {
         }
 
         &--name {
-            @include figtree-extra-bold--small;
+            @include type.figtree-extra-bold--small;
             font-style: normal;
         }
     }
@@ -78,11 +79,21 @@ body {
         box-shadow: 1rem 1rem 0rem $color-gray-950;
 
         & .card__text--header {
-            color: $color-yellow;
+            color: util.$color-yellow;
         }
+    }
+
+    // handle devices here
+
+    @include responsive.breakpoint-small-phone {
+        width: 20rem;
     }
 }
 
 .attribution {
     padding: 2rem;
+
+    @include responsive.breakpoint-small-phone {
+        padding: 1rem;
+    }
 }

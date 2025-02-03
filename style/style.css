@@ -1,79 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit&display=swap");
-html {
-  box-sizing: border-box; }
+/* Error: Undefined variable.
+ *   ,
+ * 7 |     background-color: $color-yellow;
+ *   |                       ^^^^^^^^^^^^^
+ *   '
+ *   style\index.scss 7:23  root stylesheet */
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: "Figtree", serif;
-  letter-spacing: 0rem;
-  line-height: 150%; }
-
-body {
-  background-color: #F4D04E;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; }
-
-.card {
-  width: 24rem;
-  padding: 1.5rem;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  background-color: #FFFFFF;
-  color: #111111;
-  box-shadow: 0.5rem 0.5rem 0rem #111111;
-  border: 1px solid #111111;
-  transition: 0.75s all;
-  cursor: pointer; }
-  .card__image {
-    height: 200px;
-    border-radius: 10px; }
-  .card__tag p {
-    font-size: 0.875rem;
-    font-weight: 800;
-    color: #111111;
-    background-color: #F4D04E;
-    border-radius: 4px;
-    padding: 0.25rem;
-    display: inline;
-    padding: 0.3rem 0.75rem; }
-  .card__date {
-    font-size: 0.865rem;
-    font-weight: 500; }
-  .card__text--header {
-    font-size: 1.5rem;
-    font-weight: 800;
-    transition: 0.75s all; }
-  .card__text--paragraph {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #6B6B6B; }
-  .card__author {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem; }
-    .card__author--avatar {
-      width: 2rem;
-      border-radius: 50%; }
-    .card__author--name {
-      font-size: 0.875rem;
-      font-weight: 800;
-      font-style: normal; }
-  .card:hover {
-    box-shadow: 1rem 1rem 0rem #111111; }
-    .card:hover .card__text--header {
-      color: #F4D04E; }
-
-.attribution {
-  padding: 2rem; }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      background-color: $color-yellow;\d\a   \2502                        ^^^^^^^^^^^^^\a   \2575 \a   style\\index.scss 7:23  root stylesheet";
+}
