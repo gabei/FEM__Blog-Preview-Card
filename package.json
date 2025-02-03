@@ -3,9 +3,6 @@
   "description": "![Design preview for the Blog preview card coding challenge](./preview.jpg)",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {
-    "node-sass": "^9.0.0"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watchsass": "node-sass -w style/index.scss style/style.css",
