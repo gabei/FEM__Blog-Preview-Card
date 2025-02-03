@@ -26,6 +26,7 @@ body {
     border: 1px solid util.$color-gray-950;
     transition: util.$transition-default;
     cursor: pointer;
+    position: relative;
 
     &__image {
         height: 200px;
@@ -75,13 +76,24 @@ body {
         }
     }
 
-    &:hover {
-        box-shadow: 1rem 1rem 0rem util.$color-gray-950;
-
         & .card__text--header {
             color: util.$color-yellow;
+            text-decoration: inherit;
+
+            // expand this link to cover the card
+            &:after {
+                position:absolute;
+                left:0;
+                top:0;
+                right:0;
+                bottom:0;
+            }  
         }
-    }
+
+        &:hover {
+            box-shadow: 1rem 1rem 0rem util.$color-gray-950;
+        }
+    
 
     // handle devices here
 

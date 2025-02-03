@@ -40,6 +40,7 @@ body {
   border: 1px solid #111111;
   transition: 0.75s all;
   cursor: pointer;
+  position: relative;
 }
 .card__image {
   height: 200px;
@@ -83,11 +84,19 @@ body {
   font-weight: 800;
   font-style: normal;
 }
+.card .card__text--header {
+  color: #F4D04E;
+  text-decoration: inherit;
+}
+.card .card__text--header:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 .card:hover {
   box-shadow: 1rem 1rem 0rem #111111;
-}
-.card:hover .card__text--header {
-  color: #F4D04E;
 }
 @media screen and (max-width: 450px) {
   .card {
