@@ -84,19 +84,20 @@ body {
         }
     }
 
-        & .card__text--header {
-            color: util.$color-gray-950;
-            text-decoration: inherit;
+    & .card__text--header {
+        color: util.$color-gray-950;
+        text-decoration: inherit;
 
-            // expand this link to cover the card
-            &:after {
-                position:absolute;
-                left:0;
-                top:0;
-                right:0;
-                bottom:0;
-            }  
-        }
+        // expand this link to cover the card
+        &:after {
+            position:absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            content:"";
+        }  
+    }
 
         
     
